@@ -1,23 +1,10 @@
-# 조민영 웹 CV
+# 조민영 강사 포트폴리오
 
-GitHub Pages용 개인 웹 CV입니다.
+순수 HTML, CSS, JavaScript로 제작된 GitHub Pages용 정적 웹사이트입니다.
 
-## 파일
-- `index.html`
-- `style.css`
-- `script.js`
+- `index.html`: 페이지 내용
+- `style.css`: 디자인과 반응형 레이아웃
+- `script.js`: 자격 목록과 스크롤 효과
+- `images/`: 프로필 및 강의 이미지
 
-## GitHub Pages 올리는 방법
-1. GitHub에서 새 Repository 생성
-2. 위 3개 파일 업로드
-3. `Settings` → `Pages`
-4. `Build and deployment`에서 `Deploy from a branch`
-5. Branch를 `main`, 폴더를 `/ (root)`로 선택 후 Save
-6. 잠시 후 생성된 GitHub Pages 주소 접속
-
-## 꼭 수정할 부분
-`index.html` 아래 Contact 영역의
-- `github.com/your-id`
-- `your-email@example.com`
-
-를 본인 정보로 변경하세요.
+GitHub 저장소의 루트에 모든 파일을 올리고 Pages를 main/root로 설정하면 됩니다.
