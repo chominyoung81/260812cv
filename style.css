@@ -4,3 +4,11 @@
 
 .stats.expanded{grid-template-columns:repeat(6,1fr)}
 @media(max-width:800px){.stats.expanded{grid-template-columns:repeat(2,1fr)}.hero figure{aspect-ratio:719/1080}.hero img{object-fit:contain;object-position:center top}.expertise .photo img{aspect-ratio:3/2;object-fit:contain;object-position:center top;background:#f3eee8}.banners a{aspect-ratio:3/2;min-height:0;background-position:center top}}
+
+
+/* Photo protection — preserve the original CV design */
+.hero figure{width:min(315px,100%);justify-self:center}
+.hero img,.photo img{user-select:none;-webkit-user-drag:none}
+.mark{left:50%;right:auto;top:46%;bottom:auto;transform:translate(-50%,-50%) rotate(-12deg);white-space:nowrap;padding:7px 12px;background:#26384d4d;font-size:9px;font-weight:800;letter-spacing:.14em;text-shadow:0 1px 4px #0009;backdrop-filter:blur(2px)}
+.hero figure>.mark{left:50%;right:auto;top:46%;bottom:auto}
+@media(max-width:800px){.hero figure{width:min(48vw,190px)}.expertise .photo{width:min(78vw,400px);justify-self:center}.mark,.hero figure>.mark{left:50%;right:auto;top:46%;bottom:auto;font-size:8px;padding:6px 10px}}
