@@ -1,16 +1,18 @@
+const themeToggle = document.getElementById("themeToggle");
 const year = document.getElementById("year");
-const themeBtn = document.getElementById("themeBtn");
 
 year.textContent = new Date().getFullYear();
 
-themeBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-  const isDark = document.body.classList.contains("dark-mode");
-  themeBtn.textContent = isDark ? "☀" : "☾";
-  localStorage.setItem("cv-theme", isDark ? "dark" : "light");
-});
+const savedTheme = localStorage.getItem("minyoung-cv-theme");
 
-if (localStorage.getItem("cv-theme") === "dark") {
-  document.body.classList.add("dark-mode");
-  themeBtn.textContent = "☀";
+if (savedTheme === "dark") {
+  document.body.classList.add("dark");
+  themeToggle.textContent = "☀";
 }
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  const isDark = document.body.classList.contains("dark");
+  themeToggle.textContent = isDark ? "☀" : "☾";
+  localStorage.setItem("minyoung-cv-theme", isDark ? "dark" : "light");
+});
