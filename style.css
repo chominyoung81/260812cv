@@ -17,3 +17,18 @@
 /* Compact portfolio links — avoids repeating instructor photos */
 .portfolio-links{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:42px}.portfolio-links a{min-height:150px;padding:28px 30px;display:flex;flex-direction:column;justify-content:center;border:1px solid #263f5830;background:#fff;box-shadow:0 14px 36px #46372d12;transition:.25s}.portfolio-links a:hover{transform:translateY(-4px);box-shadow:0 20px 44px #46372d20}.portfolio-links b{margin:12px 0 14px;font:clamp(24px,2.5vw,34px)/1.25 Georgia,"Noto Serif KR",serif}.portfolio-links span{padding-top:13px;border-top:1px solid #263f5826;color:#536576;font-size:12px;font-weight:900}.portfolio-links .ai-link{border-top:4px solid var(--blue)}.portfolio-links .safety-link{border-top:4px solid var(--coral)}
 @media(max-width:800px){.portfolio-links{grid-template-columns:1fr}.portfolio-links a{min-height:130px;padding:24px}.portfolio-links b{font-size:25px}}
+
+
+/* Photo-led portfolio cards, with duplicate body photos removed */
+.portfolio-links.visual-cards{grid-template-columns:1fr 1fr;gap:18px}
+.portfolio-links.visual-cards a{position:relative;isolation:isolate;min-height:300px;padding:34px;color:#fff;border:0;overflow:hidden;justify-content:flex-end;background-size:cover;background-position:center 18%;box-shadow:0 22px 50px #45352c28}
+.portfolio-links.visual-cards a:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#10243a0f,#10243ae8 72%)}
+.portfolio-links.visual-cards .ai-link{background-image:url('images/ai.webp');border-top:0}
+.portfolio-links.visual-cards .safety-link{background-image:url('images/safety.webp');border-top:0}
+.portfolio-links.visual-cards small{color:#f4ae94}
+.portfolio-links.visual-cards b{font-size:clamp(31px,3.2vw,44px);color:#fff;margin:16px 0 18px}
+.portfolio-links.visual-cards span{color:#fff;border-top-color:#ffffff66;font-size:13px}
+.expertise.text-only{display:block;padding-top:90px;padding-bottom:90px}
+.expertise.text-only>div{max-width:900px;margin:0 auto}
+.expertise.text-only h2{margin-bottom:24px}
+@media(max-width:800px){.portfolio-links.visual-cards{grid-template-columns:1fr}.portfolio-links.visual-cards a{min-height:250px;padding:28px;background-position:center top}.portfolio-links.visual-cards b{font-size:32px}.expertise.text-only{padding:72px 7vw}.expertise.text-only>div{max-width:none}}
