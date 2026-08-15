@@ -5,7 +5,6 @@
 .stats.expanded{grid-template-columns:repeat(6,1fr)}
 @media(max-width:800px){.stats.expanded{grid-template-columns:repeat(2,1fr)}.hero figure{aspect-ratio:719/1080}.hero img{object-fit:contain;object-position:center top}.expertise .photo img{aspect-ratio:3/2;object-fit:contain;object-position:center top;background:#f3eee8}.banners a{aspect-ratio:3/2;min-height:0;background-position:center top}}
 
-
 /* Photo protection — preserve the original CV design */
 .hero figure{width:min(315px,100%);justify-self:center}
 .hero img,.photo img{user-select:none;-webkit-user-drag:none}
@@ -13,11 +12,9 @@
 .hero figure>.mark{left:50%;right:auto;top:46%;bottom:auto}
 @media(max-width:800px){.hero figure{width:min(48vw,190px)}.expertise .photo{width:min(78vw,400px);justify-self:center}.mark,.hero figure>.mark{left:50%;right:auto;top:46%;bottom:auto;font-size:8px;padding:6px 10px}}
 
-
 /* Compact portfolio links — avoids repeating instructor photos */
 .portfolio-links{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:42px}.portfolio-links a{min-height:150px;padding:28px 30px;display:flex;flex-direction:column;justify-content:center;border:1px solid #263f5830;background:#fff;box-shadow:0 14px 36px #46372d12;transition:.25s}.portfolio-links a:hover{transform:translateY(-4px);box-shadow:0 20px 44px #46372d20}.portfolio-links b{margin:12px 0 14px;font:clamp(24px,2.5vw,34px)/1.25 Georgia,"Noto Serif KR",serif}.portfolio-links span{padding-top:13px;border-top:1px solid #263f5826;color:#536576;font-size:12px;font-weight:900}.portfolio-links .ai-link{border-top:4px solid var(--blue)}.portfolio-links .safety-link{border-top:4px solid var(--coral)}
 @media(max-width:800px){.portfolio-links{grid-template-columns:1fr}.portfolio-links a{min-height:130px;padding:24px}.portfolio-links b{font-size:25px}}
-
 
 /* Photo-led portfolio cards, with duplicate body photos removed */
 .portfolio-links.visual-cards{grid-template-columns:1fr 1fr;gap:18px}
@@ -32,3 +29,8 @@
 .expertise.text-only>div{max-width:900px;margin:0 auto}
 .expertise.text-only h2{margin-bottom:24px}
 @media(max-width:800px){.portfolio-links.visual-cards{grid-template-columns:1fr}.portfolio-links.visual-cards a{min-height:250px;padding:28px;background-position:center top}.portfolio-links.visual-cards b{font-size:32px}.expertise.text-only{padding:72px 7vw}.expertise.text-only>div{max-width:none}}
+
+/* Watermark position only — keep all CV layout/content unchanged */
+.mark{left:auto;right:12px;top:auto;bottom:12px;transform:none}
+.hero figure>.mark{left:auto;right:12px;top:auto;bottom:100px;transform:none}
+@media(max-width:800px){.mark{left:auto;right:10px;top:auto;bottom:10px;transform:none}.hero figure>.mark{left:auto;right:10px;top:auto;bottom:88px;transform:none}}
