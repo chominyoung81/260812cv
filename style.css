@@ -12,3 +12,8 @@
 .mark{left:50%;right:auto;top:46%;bottom:auto;transform:translate(-50%,-50%) rotate(-12deg);white-space:nowrap;padding:7px 12px;background:#26384d4d;font-size:9px;font-weight:800;letter-spacing:.14em;text-shadow:0 1px 4px #0009;backdrop-filter:blur(2px)}
 .hero figure>.mark{left:50%;right:auto;top:46%;bottom:auto}
 @media(max-width:800px){.hero figure{width:min(48vw,190px)}.expertise .photo{width:min(78vw,400px);justify-self:center}.mark,.hero figure>.mark{left:50%;right:auto;top:46%;bottom:auto;font-size:8px;padding:6px 10px}}
+
+
+/* Compact portfolio links — avoids repeating instructor photos */
+.portfolio-links{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:42px}.portfolio-links a{min-height:150px;padding:28px 30px;display:flex;flex-direction:column;justify-content:center;border:1px solid #263f5830;background:#fff;box-shadow:0 14px 36px #46372d12;transition:.25s}.portfolio-links a:hover{transform:translateY(-4px);box-shadow:0 20px 44px #46372d20}.portfolio-links b{margin:12px 0 14px;font:clamp(24px,2.5vw,34px)/1.25 Georgia,"Noto Serif KR",serif}.portfolio-links span{padding-top:13px;border-top:1px solid #263f5826;color:#536576;font-size:12px;font-weight:900}.portfolio-links .ai-link{border-top:4px solid var(--blue)}.portfolio-links .safety-link{border-top:4px solid var(--coral)}
+@media(max-width:800px){.portfolio-links{grid-template-columns:1fr}.portfolio-links a{min-height:130px;padding:24px}.portfolio-links b{font-size:25px}}
